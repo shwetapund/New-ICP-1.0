@@ -1,0 +1,14 @@
+
+.sai{
+height: 300px;
+width:300px;
+border:solid 2px black; 
+border-radius: 10px 20px 10px 20px;
+margin-left: 90px;
+}
+.ram{
+    font-size: 30px;
+}
+.heading{
+    color: dodgerblue;
+}
