@@ -1,0 +1,64 @@
+.hi{
+    margin-left: 10px;
+    height:370px;
+    width: 580px;
+    border:solid 5px black;
+}
+.hi1{
+    margin-left: 10px;
+    height:380px ;
+    width: 700px;
+  
+}
+.rash{
+    height:400px;
+    margin-left: 550px;
+    border:solid 2px black;
+    box-shadow: 2px 5px 2px rgb(51, 50, 50);
+    border-radius: 10px 10px 10px 10px;
+}
+.rash:hover{
+    height:410px;
+}
+
+.aliya{
+    height:400px;
+    margin-left: 400px;
+    border:solid 2px black;
+    box-shadow: 2px 5px 2px rgb(51, 50, 50);
+    border-radius: 10px 10px 10px 10px;
+}
+.aliya:hover{
+    height:410px;
+}
+
+.aliya1{
+    height:400px;
+    border:solid 2px black;
+    margin-left: 550px;
+    box-shadow: 2px 5px 2px rgb(51, 50, 50);
+    border-radius: 10px 10px 10px 10px;
+}
+.aliya1:hover{
+    height:410px;
+}
+
+
+.rash1{
+    height:400px;
+    width: 370px;
+    margin-left: 500px;
+   border:solid 2px black;
+   box-shadow: 2px 5px 2px rgb(51, 50, 50);
+   border-radius: 10px 10px 10px 10px;
+}
+.rash1:hover{
+    height:410px;
+}
+
+.S{
+    font-size: 25px;
+
+}
+
+
