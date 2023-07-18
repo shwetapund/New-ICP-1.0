@@ -1,0 +1,14 @@
+.hii{
+    height: 400px;
+    width: 600px;
+    border: solid 5px black;
+    border-radius: 10px 20px 10px 20px;
+}
+.hii:hover{
+    box-shadow: 5px 5px 5px rgb(63, 63, 62);
+}
+.img{
+    height: 500px;
+    width: 700px;
+
+}
