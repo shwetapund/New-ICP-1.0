@@ -14,12 +14,18 @@ u {
     color: blue;
 }
 
-.img {
+.image {
     height: 350px;
-    margin-top: 80px;
+    width: 350px;
+    
     display: block;
     margin: 0 auto;
-
+    border:double 8px black;
+    border-radius:50% ;
+}
+.image:hover{
+    border:solid  5px black;
+    box-shadow: 3px 0px 3px 0px rgb(90, 89, 89);
 }
 
 .main {
@@ -34,7 +40,10 @@ u {
 }
 
 .name {
-    color: black;
+    color:  #ff0000;
     text-align: center;
     font-size: 30px;
+}
+.hide{
+    color:  #0000cc;
 }
