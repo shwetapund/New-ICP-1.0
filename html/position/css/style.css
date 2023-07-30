@@ -1,0 +1,101 @@
+.profile-pic{
+    background-color: #bf360c;
+    
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    position: relative;
+    top:10px;
+    left: 110px;
+    
+  
+}
+.profile-container{
+    background-color: #ffffff;
+  
+    height: 900px;
+    width: 300px;
+    position: relative;
+  
+}
+body{
+    background-color: #f5f5f5;
+
+}
+.S{
+    position: relative;
+    left: 18px;
+    top:8px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.name-text{
+   text-align: center;
+    font-size: 23px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    
+    top:35px;
+    
+}
+.sub-menu{
+    height: 45px;
+   
+    margin-top: 15px;
+}
+.sub-menu-1{
+    height: 45px;
+    display: flex;
+   flex-direction: row;
+   
+}
+.sub-menu-1:hover{
+    background-color:  #e6f3ff;
+    cursor: pointer;
+}
+.sub-menu:hover{
+    background-color:  #e6f3ff;
+    cursor: pointer;
+}
+.menu-icon{
+    height: 20px;
+    position:relative;
+    left:15px;
+    top: 10px;
+}
+.menu-icon-P{
+    height: 20px;
+    position: relative;
+    top:15px;
+    left:15px;
+}
+.small-text{
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;  
+    bottom: 5px;
+    left: 50px;
+}
+.small-text-1{
+    font-size: 18px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;  
+    bottom: 25px;
+    left: 50px;
+}
+.link-to{
+    text-decoration: none;
+    color: black;
+}
+.link-to:hover{
+    color: blue;
+}

@@ -1,13 +1,170 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
- 
+
     <title>Document</title>
+    <style>
+        .container {
+            /*background-color: #33ffff;*/
+            height: 50px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #heading {
+
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .main-img {
+            height: 300px;
+            border: 5px double black;
+            margin: 40px;
+            border-radius: 30px 30px 30px 30px;
+
+        }
+
+        .sub-container {
+            text-align: center;
+            
+            height: 700px;
+        }
+
+        .main-cont {
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .card {
+            border: 2px solid #00b300;
+            border-radius: 25px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .border-black
+        {
+            border-color: black;
+        }
+
+        .border-green
+        {
+            border-color: #00b300;
+        }
+
+        .border-sky
+        {
+            border-color: aqua;
+        }
+       
+        .bg-light-green
+        {
+            background-color:  #ccffcc;
+        }
+
+        .bg-light-sky
+        {
+            background-color: #ccffff;
+        }
+
+        .bg-light-gray
+        {
+            background-color: #e0e0eb;
+        }
+
+        .card-img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-top: 10px;
+            border: 7px black double;
+        }
+
+        .card-img:hover {
+            height: 103px;
+            box-shadow: 2px 2px 2px 2px greenyellow;
+            border: 5px black solid;
+        }
+
+        .text {
+            font-size: 18px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 8px;
+            font-size: 15px;
+
+            border-radius: 5px;
+            background-color: green;
+        }
+
+        .btn:hover {
+            box-shadow: rgb(0, 0, 0);
+        }
+
+        .btn-btn {
+            text-decoration: none;
+            color: white;
+
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        
+    <div class=" container">
+        <b id="heading">MERN STACK</b>
 
     </div>
+    <div class="sub-container">
+
+        <img src="https://static.javatpoint.com/blog/images/mern-stack.png" class="main-img" />
+        <div class="main-cont">
+            <div class="card border-green bg-light-green">
+                <img src="mongodb.png" class="card-img" />
+                <h2> MongoDB</h2>
+                <p class="text">MongoDB is a NoSQL DBMS where data is stored in the form of documents having key-value
+                    pairs similar to JSON objects. MongoDB enables users to create databases, schemas, and tables.
+                    </p>
+                <button class="btn"><a href="https://www.mongodb.com/" class="btn-btn">Click More</a></button>
+            </div>
+
+            <div class="card border-black bg-light-gray">
+                <img src="express .png" class="card-img" />
+                <h2>ExpressJS</h2>
+                <p class="text">ExpressJS is a NodeJS framework that simplifies writing the backend code. It saves you
+                    from creating multiple Node modules. For keeping the code precise, ExpressJS offers a range of
+                    middleware.</p>
+                <button class="btn"><a href="https://www.mongodb.com/" class="btn-btn">Click More</a></button>
+            </div>
+
+            <div class="card border-sky bg-light-sky">
+                <img src="react.png" class="card-img" />
+                <h2>ReactJS</h2>
+                <p class="text">ReactJS is a JS library that allows the development of user interfaces for mobile apps
+                    and SPAs. It allows you to code JavaScript and develop UI components. The JS library uses virtual
+                    DOM for doing everything.</p>
+                    <button class="btn"><a href="https://www.mongodb.com/" class="btn-btn">Click More</a></button>
+
+            </div>
+
+            <div class="card border-green bg-light-green">
+                <img src="node1.png" class="card-img" />
+                <h2>NodeJS</h2>
+                <p class="text">NodeJS is an open-source JavaScript runtime environment that allows users to run code on
+                    the server. It comes with the node package manager or npm, enabling users to select from a wide
+                    selection of node modules.</p>
+                    <button class="btn"><a href="https://www.mongodb.com/" class="btn-btn">Click More</a></button>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
