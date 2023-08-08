@@ -1,0 +1,16 @@
+.button{
+    background-color: black;
+    color:white;
+    padding:20px;
+    font-size:25px;
+    border:none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.bg-tomato{
+    background-color: tomato;
+}
+.bg-chilly{
+    background-color: green;
+}
