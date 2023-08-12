@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            background-color: aqua;
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+
+        
+
+
+
+
+
+
+
+
+
+        .main-div {
+            /* height: 200px; */
+            width: 100%;
+
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .div {
+            margin: 25px;
+            width: 100px;
+            height: 80px;
+            background-color: blue;
+        }
+
+        .flexuse {
+            display: flex;
+            /* flex-direction: row;  */
+
+        }
+
+        .cat-img {
+            height: 400px;
+
+        }
+
+        .flexuse-sub {
+            margin: 30px;
+
+        }
+
+        /*@media screen and (min-width:600px) and (max-width:767px) {
+             .btn {
+                background-color: tomato;
+                font-size: 40px;
+            }
+            .div{
+                height: 100px;
+                width: 120px;
+                /* margin:25px; 
+            }
+
+            .main-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               
+            }
+
+            .flexuse{
+                display: flex;
+                flex-direction: column;
+                
+            }
+       
+       
+        } */
+
+        /* mobile device */
+        @media screen and (min-width:450px) and (max-width:767px) {
+            .btn {
+                background-color: tomato;
+            }
+
+            .div {
+                height: 100px;
+                width: 120px;
+                margin: 25px;
+            }
+
+            .main-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .flexuse {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cat-img {
+
+                height: 80px;
+
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <button class="btn">
+        Button
+    </button>
+    <br />
+    <br /> <br />
+    <div class="main-div">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+        <div class="div">4</div>
+    </div>
+
+    <div class="flexuse">
+        <div class="flexuse-sub">
+            <img src="./20211205_181525.jpg" class="cat-img" />
+        </div>
+        <div class="flexuse-sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque suscipit recusandae rerum sit
+            temporibus dolores maxime illo ipsa dolorem, praesentium velit facere incidunt, consequatur dolor, minus
+            reiciendis voluptates eligendi.
+        </div>
+    </div>
+</body>
+
+</html>
