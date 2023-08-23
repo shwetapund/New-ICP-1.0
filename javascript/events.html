@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="load()">
+    <button onclick="button()" >Button</button>
+    <br/>   <br/>   
+     <button onclick="knowmore()" onmousemove="mousemove()">Know More</button>
+    <br/><br/>   
+    <input type="text" onChange="change()"/>
+    <br/><br/>   
+    <input type="text" onKeyPress="keypress()" onkeydown="keydown()" onkeyup="keyup()"/>
+    <br/><br/>   
+    <button onmouseover="MouseOver()" onmouseout="mouseout()">Welcome</button>
+    <br/><br/>
+    <button ondblclick="mousedbl()">Surprize</button>
+    <script>
+        function knowmore()
+        {
+            console.log("happy wishes");
+        }
+
+        function button()
+        {
+            alert("Good Morning");
+        }
+
+        function change()
+        {
+            console.log('change');
+        }
+        function keypress()
+        {
+            console.log("keypress");
+        }
+        function keydown()
+        {
+            console.log("keydown");
+        }
+        function keyup()
+        {
+            console.log("keyup");
+        }
+        function MouseOver()
+        {
+            console.log("mouseover");
+        }
+        function mouseout()
+        {
+            console.log("mouseout");
+        }
+        function load()
+        {
+            alert("page is loading");
+        }
+        function mousedbl()
+        {
+            alert("🐒This is Monkey😊");
+        }
+        function mousemove()
+        {
+            console.log("this is shweta");
+        }
+    </script>
+</body>
+</html>
