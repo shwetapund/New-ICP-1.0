@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<style>
+    .design{
+        background-color:pink;
+        padding:20px;
+        margin:10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+</style>
+<body>
+    <h1>
+        Tum koun Ho ?
+    </h1>
+    <p id="answer" class="design">Answer: </p>
+    <button onClick="pari()" class="design">Papa ki Pari</button>
+    <button onClick="ladala()" class="design">Papa ka Para</button>
+
+    <script>
+        function pari()
+        {
+            const ans = document.getElementById("answer");
+            ans.innerText = "Answer: Papa ki Pari 🥰👩";
+            
+        }
+        function ladala()
+        {
+            const ans = document.getElementById("answer");
+            ans.innerText = "Answer: Papa ka ladala 🤗🤴";
+     
+        }
+    </script>
+</body>
+</html>
