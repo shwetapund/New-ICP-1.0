@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt("enter number for divisible by 4 or 7: "))
+        
+        /* if(number1 % 4 == 0 || number1 % 7 == 0){
+           
+            console.log("number is divisible by 4 or 7")
+        
+           
+
+        }
+        else{
+            console.log("number is not divisible by 4 or 7")
+        } */
+    
+
+        if(number % 4 == 0 || number % 7 == 0){
+            // console.log("number is divisible by 4 or 7")
+            if(number % 4 == 0 && number % 7 == 0){
+                console.log("number is divisible by 4 or 7")
+            }
+
+            else if(number % 4 == 0){
+                console.log("number is divisible by 4 ") 
+            }
+            else{
+                console.log("number is divisible by 7")
+            }
+        }
+        else{
+            console.log("number is not divisible by 4 or 7")
+        }
+    </script>
+</body>
+</html>
