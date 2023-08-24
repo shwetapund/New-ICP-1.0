@@ -6,20 +6,26 @@
     <title>Dom Manipulation part-2</title>
 </head>
 <body>
-    <input type="text" type="button" id="num1"/><br/><br/>
-    <input type="text" type="button" id="num2"/>
+    <input type="text"  id="num1"/><br/><br/>
+    <input type="text"  id="num2"/>
     <br/><br/>
-    <p>Answer: </p>
-    <button id="calculate" onclick="calculate()">Calculate</button>
+    <p id="answer">Answer: </p>
+    <button  onclick="calculate()" type="button">Calculate</button>
 
     <script>
-        let value1 = document.getElementById("num1");
-        let value2 = document.getElementById("num2");
-        let sum = document.getElementById("calculate");
+        const value1 = document.getElementById("num1");
+        const value2 = document.getElementById("num2");
+        const sum = document.getElementById("answer");
         function calculate()
         {
-            sum = parseInt(value1 + value2);
+            let n1 = parseInt(value1.value);
+            let n2 = parseInt(value2.value);
+            let  resultsum = n1 + n2;
+            sum.innerText = `Answer : ${resultsum}`;
+
         }
+       
+      
     </script>
 </body>
 </html>
