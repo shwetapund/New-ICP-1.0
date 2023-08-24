@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice roller</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .card {
+            padding: 20px;
+            width: 300px;
+            border: 4px solid rgb(6, 168, 233);
+            border-radius: 10px;
+            box-shadow: 0 0 4px 4px rgb(182, 224, 241);
+        }
+
+        .heading {
+            color: red;
+            border: 4px solid rgb(6, 168, 233);
+            border-radius: 10px;
+            box-shadow: 0 0 4px 4px rgb(182, 224, 241);
+            width: 900px;
+        }
+
+        body {
+            background-color: black;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="heading d-block mx-auto mt-3">
+        <h1 class=" d-block mx-auto pt-2
+            text-center ">
+            Dice Roller Game
+        </h1>
+    </div>
+    <div class="card d-block mx-auto mt-5 bg-light">
+        <img src="./images/1.png" id="dice" height="150px " class="d-block mx-auto mt-3" />
+        <br /><br />
+        <h3 class="text-center mb-5 " id="score">Score: </h3>
+        <button type="button" onClick="rolldice()" class="d-block mx-auto btn fw-bold fs-5 px-4 py-2 bg-info">Roll Dice</button>
+    </div>
+    <script>
+
+        const rollerdice = document.getElementById("dice");
+
+        function rolldice() {
+            const min = 1;
+            const max = 7;
+
+            const randomNum = Math.floor(Math.random() * (max - min) + min);
+
+            const scoreall = document.getElementById("score");
+            scoreall.innerText = `Score: ${randomNum}`;
+            // scoreall.innerText= "`Score: ${randomNum}`;
+
+            if (randomNum == 1) {
+                rollerdice.src = "./images/1.png";
+            }
+            else if (randomNum == 2) {
+                rollerdice.src = "./images/2.png";
+            }
+            else if (randomNum == 3) {
+                rollerdice.src = "./images/3.png";
+            }
+            else if (randomNum == 4) {
+                rollerdice.src = "./images/4.png";
+            }
+            else if (randomNum == 5) {
+                rollerdice.src = "./images/5.png";
+            }
+            else {
+                rollerdice.src = "./images/6.png";
+            }
+
+
+        }
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
