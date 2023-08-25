@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Classes(dark/light) theme</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            padding:10px;
+        }
+        .bg-warning{
+            background-color: yellow;
+        }
+        .bg-danger{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-danger" id="box">
+        button
+    </div>
+<br/><br/>
+    <button type="button"  onclick="changeclassname('bg-warning')">warning</button>
+    <button type="button"  onclick="changeclassname('bg-danger')">danger</button>
+
+    <script>
+       
+        //simple code
+        // function danger()
+        // {
+        //     box.classList.remove("bg-warning")
+        //     box.classList.add("bg-danger")
+        // }
+        // function warning()
+        // {
+        //     box.classList.remove("bg-danger")
+        //     box.classList.add("bg-warning")
+        // }
+    
+        // optimize code
+        // function danger()
+        // {
+        //     box.className = "container bg-danger";
+        // }
+        // function warning()
+        // {
+        //     box.className = "container bg-warning";
+        // }
+
+        function changeclassname(bgName)
+        {
+            const box = document.getElementById("box");
+            box.className = `container ${bgName}`
+        }
+    </script>
+</body>
+</html>
