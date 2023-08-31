@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students cards using for loop ang array</title>
+    <style>
+        .text-center{
+            text-align: center;
+        }
+        .card{
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            margin:5px;
+        }
+        .student-card {
+            background-color: fuchsia;
+            border: 1px solid rgb(87, 2, 16);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+       .bg-light{
+        background-color: rgb(239, 239, 184);
+       }
+    </style>
+</head>
+<body class="bg-light">
+    <h1 class="text-center">Students Collection</h1>
+    <div id="box" class="card">
+
+    </div>
+
+    <script>
+        // function emoji()
+        // {
+        //     const emojies = ['🥰','😋','😂','😎'];
+        //     const min = 0;
+        //     const max = emojies.length;
+        //     const emojiindex =  Math.floor(Math.randome()*(max-min)+min);
+        //     return emojies[emojiindex];
+        // }
+        // const emojicollection = emoji();
+        // document.write(emojicollection);
+
+        const students = ['shweta','shital','kashis','Datta','Abhi','Nikita',];
+
+        const studentslist = document.getElementById("box");
+     
+        for(let i=0; i<students.length; i++)
+        {
+            // const emojicollection = emoji();
+            studentslist.innerHTML = studentslist.innerHTML+`<div class="student-card">
+                Hello ${students[i]} </div>`;
+        }
+
+ 
+    </script>
+</body>
+</html>
