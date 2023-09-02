@@ -34,16 +34,16 @@
     </div>
 
     <script>
-        // function emoji()
-        // {
-        //     const emojies = ['🥰','😋','😂','😎'];
-        //     const min = 0;
-        //     const max = emojies.length;
-        //     const emojiindex =  Math.floor(Math.randome()*(max-min)+min);
-        //     return emojies[emojiindex];
-        // }
-        // const emojicollection = emoji();
-        // document.write(emojicollection);
+        function getRandomEmoji()
+        {
+            const emojies = ["🥰","😋","😂","😎"];
+            const min = 0;
+            const max = emojies.length;
+            const emojiindex =  Math.floor(Math.random()*(max-min)+min);
+            return emojies[emojiindex];
+        }
+        const emojicollection = getRandomEmoji();
+        console.log(emojicollection);
 
         const students = ['shweta','shital','kashis','Datta','Abhi','Nikita',];
 
@@ -51,9 +51,9 @@
      
         for(let i=0; i<students.length; i++)
         {
-            // const emojicollection = emoji();
+            const emojicollection = getRandomEmoji();
             studentslist.innerHTML = studentslist.innerHTML+`<div class="student-card">
-                Hello ${students[i]} </div>`;
+                Hello ${students[i]} ${emojicollection}</div>`;
         }
 
  
