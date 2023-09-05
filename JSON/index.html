@@ -1,9 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>JSON</title>
 </head>
+<style>
+    .card {
+        border: 1px solid black;
+        background-color: aliceblue;
+        height: 200px;
+
+    }
+</style>
+
 <body>
-    <h1>JSON</h1>
+    <h1>Students Information</h1>
+
+    <div class="card" id="cards">
+        
+    </div>
+
+
+
+    <script>
+
+        [
+            {
+                "name": "John Doe",
+                "age": 25,
+                "email": "john@example.com",
+                "ImageUrl": "./images/student.png",
+                "tagline": "Living life to the fullest!"
+            },
+            {
+                "name": "Jane Smith",
+                "age": 30,
+                "email": "jane@example.com",
+                "ImageUrl": "./images/student2.png",
+                "tagline": "Exploring the world, one step at a time."
+            },
+            {
+                "name": "Michael Johnson",
+                "age": 28,
+                "email": "michael@example.com",
+                "ImageUrl": "./images/student3.png",
+                "tagline": "Passionate about coding and coffee."
+            },
+            {
+                "name": "Emily Davis",
+                "age": 22,
+                "email": "emily@example.com",
+                "ImageUrl": "./images/student4.png",
+                "tagline": "Nature lover and aspiring artist."
+            },
+            {
+                "name": "Robert Brown",
+                "age": 35,
+                "email": "robert@example.com",
+                "ImageUrl": "./images/student5.png",
+                "tagline": "Always seeking new challenges."
+            },
+
+        ]
+
+        document.getElementById(cards);
+
+        for (i = 0; i < students.length; i++) {
+            
+
+        }
+    </script>
 </body>
+
 </html>
