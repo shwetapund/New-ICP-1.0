@@ -5,26 +5,41 @@
     <title>JSON</title>
 </head>
 <style>
-    .card {
-        border: 1px solid black;
-        background-color: aliceblue;
-        height: 200px;
+    .student-container{
 
+
+        padding: 10px;
+       margin: 10px;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .bg-warning {
+        background-color:white
+    }
+
+    .text-center {
+        text-align: center;
+    }
+    .student-info-card{
+        border: 1px solid  #ff3333;
+        border-radius: 10px;
+        background-color: 	 #ffe6e6;
+        margin: 10px;
+       
     }
 </style>
 
-<body>
-    <h1>Students Information</h1>
+<body class="bg-warning">
+    <h1 class="text-center">Students Information</h1>
 
-    <div class="card" id="cards">
-        
+    <div class="student-container" id="cards">
+
     </div>
-
-
 
     <script>
 
-        [
+        const students = [
             {
                 "name": "John Doe",
                 "age": 25,
@@ -43,31 +58,38 @@
                 "name": "Michael Johnson",
                 "age": 28,
                 "email": "michael@example.com",
-                "ImageUrl": "./images/student3.png",
+                "ImageUrl": "./images/student3.jpg",
                 "tagline": "Passionate about coding and coffee."
             },
             {
                 "name": "Emily Davis",
                 "age": 22,
                 "email": "emily@example.com",
-                "ImageUrl": "./images/student4.png",
+                "ImageUrl": "./images/student4.jpg",
                 "tagline": "Nature lover and aspiring artist."
             },
             {
                 "name": "Robert Brown",
                 "age": 35,
                 "email": "robert@example.com",
-                "ImageUrl": "./images/student5.png",
+                "ImageUrl": "./images/student5.jpg",
                 "tagline": "Always seeking new challenges."
             },
 
         ]
 
-        document.getElementById(cards);
+        const studentlist = document.getElementById("cards");
 
         for (i = 0; i < students.length; i++) {
-            
+            const name = students[i].name;
+            const age = students[i].age;
+            const email = students[i].email;
+            const ImageUrl = students[i].ImageUrl;
+            const tagline = students[i].tagline;
 
+            studentlist.innerHTML = studentlist.innerHTML + (`<div class="student-info-card">
+                Hello ${name}.<br/> You are ${age} year old.<br/>Email id : ${email}<br/>
+                <img src="${ImageUrl}"height=200px width=150px><br/> tagline: ${tagline}</div>`)
         }
     </script>
 </body>
